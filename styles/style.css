@@ -1,0 +1,221 @@
+/* Font-Family Inter of Full Styles */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+/* Miama Font-Family Import */
+@import url("https://fonts.cdnfonts.com/css/miama");
+
+/* Shared CSS */
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #000000;
+}
+.btn-primary {
+  background-color: #e6533c;
+  border-radius: 42px;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #ffffff;
+  border: none;
+  padding: 15px 35px;
+  margin-top: 30px;
+}
+#header {
+  background: linear-gradient(
+    180deg,
+    rgb(17, 17, 17, 1)100%,
+    rgba(119, 119, 119, 0) 0%
+  );
+height: 700px;
+}
+.description {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  line-height: 150%;
+  font-weight: 400;
+}
+/* Nav Style in CSS */
+.navbar {
+  max-width: 1010px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.nav-title {
+  color: #e6533c;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 2.25rem;
+}
+.nav-menu {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+  border: 0.5px solid rgba(255, 255, 255, 0.2);
+  border-radius: 39px;
+  padding: 4px;
+  width: 400px;
+}
+#humber-icon {
+  display: none;
+}
+.nav-menu > li {
+  list-style: none;
+}
+.nav-menu > li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.125rem;
+}
+#home {
+  background-color: #e6533c;
+  padding: 8px 20px;
+  border-radius: 35px;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+/* Banner Section Style In CSS */
+.banner-container {
+  max-width: 1010px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  gap: 100px;
+}
+.banner-content {
+  max-width: 500px;
+}
+.banner-title {
+  font-weight: bolder;
+  font-size: 4rem;
+  color: #ffffff;
+}
+#span {
+  font-family: "Miama", sans-serif;
+  font-weight: 400;
+  font-size: 8rem;
+  line-height: 50%;
+  letter-spacing: 3px;
+}
+.download-app {
+  border: 1px solid #ffffff;
+  padding: 15px 35px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.125rem;
+  border-radius: 42px;
+  margin-left: 25px;
+}
+.image-content {
+  max-width: 500px;
+  height: 100%;
+  margin-right: -80px;
+}
+.image-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.workout-info {
+  height: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  width: 160px;
+  padding: 5px 20px;
+  margin-left: -165px;
+  margin-top: -220px;
+}
+.workout-info > h3 {
+  color: #ffffff;
+  font-weight: bolder;
+  font-size: 3rem;
+  margin: 0;
+  margin-bottom: 5px;
+}
+.workout-info > p {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 1rem;
+  margin: 0;
+}
+.tutorial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  background: rgba(48, 48, 48, 0.54);
+  backdrop-filter: blur(15px);
+  width: 160px;
+  height: 85px;
+  padding: 10px 20px;
+  margin-top: -185px;
+  margin-left: -45px;
+}
+.ellips {
+  background: #e6533c;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+#ellips-play {
+  display: none;
+}
+.tutorial-info > h3 {
+  color: #ffffff;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  margin: 15px 0px 5px 0px;
+}
+#play {
+  color: #ffffff;
+}
+.tutorial-info > p {
+  color: rgba(239, 237, 232, 0.65);
+  font-size: 1rem;
+}
+/* chagne-habit-container Style in CSS */
+
+.chagne-habit-container {
+  max-width: 1010px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Responsive With Mobile Device */
+@media screen and (max-width: 576px) {
+  .nav-menu {
+    display: none;
+  }
+  #humber-icon {
+    display: block;
+    color: #ffffff;
+    margin-right: 15px;
+    font-size: 1.25rem;
+  }
+  .banner-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .image-info {
+    gap: 20px;
+  }
+  .workout-info {
+    margin-top: -390px;
+  }
+  .tutorial {
+    margin-top: -350px;
+    margin-left: -30px;
+  }
+  #play {
+    display: none;
+  }
+  #ellips-play {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
