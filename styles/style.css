@@ -15,16 +15,16 @@ body {
   font-size: 1.125rem;
   color: #ffffff;
   border: none;
-  padding: 15px 35px;
+  padding: 15px 25px;
   margin-top: 30px;
 }
 #header {
   background: linear-gradient(
     180deg,
-    rgb(17, 17, 17, 1)100%,
+    rgb(17, 17, 17, 1) 100%,
     rgba(119, 119, 119, 0) 0%
   );
-height: 700px;
+  min-height: 670px;
 }
 .description {
   color: rgba(255, 255, 255, 0.5);
@@ -98,7 +98,7 @@ height: 700px;
 }
 .download-app {
   border: 1px solid #ffffff;
-  padding: 15px 35px;
+  padding: 15px 25px;
   color: #ffffff;
   text-decoration: none;
   font-weight: 600;
@@ -116,6 +116,13 @@ height: 700px;
   justify-content: center;
   align-items: center;
   gap: 50px;
+}
+#play {
+  color: #ffffff;
+}
+.banner-image > img{
+width: 330px;
+height: 545px;
 }
 .workout-info {
   height: 100px;
@@ -169,23 +176,69 @@ height: 700px;
   font-size: 1.5rem;
   margin: 15px 0px 5px 0px;
 }
-#play {
-  color: #ffffff;
-}
 .tutorial-info > p {
   color: rgba(239, 237, 232, 0.65);
   font-size: 1rem;
 }
-/* chagne-habit-container Style in CSS */
+
+/* chagne-habit-container Style with CSS */
 
 .chagne-habit-container {
   max-width: 1010px;
   margin: 0 auto;
-  text-align: center;
+  margin-top: 45px;
 }
-
+.change-habit-tile {
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: bolder;
+  text-align: center;
+  margin: 0;
+}
+.habit-description {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+  font-size: 0.875rem;
+  width: 630px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+.habit-image {
+display: flex;
+justify-content: center;
+gap: 40px;
+}
+.habit-image-info {
+  margin-top: 55px;
+  width: 230px;
+}
+.habit-image-info img{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin: 0px 25px;
+}
+.habit-image-info > h4 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0;
+  margin-top: 15px;
+}
+.habit-image-info > p {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
 /* Responsive With Mobile Device */
 @media screen and (max-width: 576px) {
+  #header{
+    height:1195px;
+    width: 100%;
+  }
   .nav-menu {
     display: none;
   }
@@ -202,12 +255,15 @@ height: 700px;
   .image-info {
     gap: 20px;
   }
+  .banner-image{
+    margin-left: -70px;
+  }
   .workout-info {
     margin-top: -390px;
   }
   .tutorial {
     margin-top: -350px;
-    margin-left: -30px;
+    margin-left: -80px;
   }
   #play {
     display: none;
@@ -217,5 +273,16 @@ height: 700px;
     color: #ffffff;
     text-align: center;
     margin-top: 10px;
+  }
+  .change-habit-tile{
+font-size: 2rem;
+  }
+  .habit-description{
+    width: 100%;
+  }
+  .habit-image{
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
   }
 }
