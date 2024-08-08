@@ -471,9 +471,71 @@ select {
   font-weight: 600;
   margin-bottom: 25px;
 }
+/* Style MeetOurTeam-container in CSS */
+.meet-our-team-container {
+  max-width: 995px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.team-title {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bolder;
+  text-align: center;
+  margin: 0;
+}
+.team-description {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+.team-trainers {
+  /* max-width: 800px; */
+  margin-top: 45px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.1);
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  padding: 20px;
+}
+.trainer-1, .trainer-2, .trainer-3, .trainer-4, .trainer-5, .trainer-6 {
+  background-image: url("../images/trainer1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 305px;
+  height: 255px;
+  border-radius: 15px;
+}
+.trainer-2{
+background-image: url('../images/trainer2.png');
+}
+.trainer-3{
+background-image: url('../images/trainer3.png');
+}
+.trainer-4{
+background-image: url('../images/trainer4.png');
+}
+.trainer-5{
+background-image: url('../images/trainer5.png');
+}
+.trainer-6{
+background-image: url('../images/trainer6.png');
+}
+.trainer-title{
+  color: #fff;
+  font-size: 1.25rem;
+  margin: 170px 0px 10px 15px;
+}
+.trainer-description{
+  color: rgba(255, 255, 255, 0.5);
+  font-size:0.875rem;
+  margin-left:15px;
+}
 /* Responsive With Mobile Device */
 @media screen and (max-width: 576px) {
- /* Header Section Responsive */
+  /* Header Section Responsive */
   #header {
     height: 1195px;
     width: 100%;
@@ -556,10 +618,36 @@ select {
   select {
     width: 155px;
   }
-  .bmi-calculate > #sex{
+  .bmi-calculate > #sex {
     width: 173px;
-  } 
-  .bmi-calculate > #activity{
+  }
+  .bmi-calculate > #activity {
     width: 362px;
   }
+  /* MeetOurTeam Container Responsive */
+.team-trainers{
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-areas: 
+  "trainer-2"
+  "trainer-5"
+  "trainer-3"
+  "trainer-6";
+  align-items: center;
+  justify-items: center;
+}
+.trainer-1, .trainer-4{
+  display: none;
+}
+.trainer-2{
+  grid-area: trainer-2;
+}
+.trainer-3{
+  grid-area: trainer-3;
+}
+.trainer-5{
+  grid-area: trainer-5;
+}
+.trainer-6{
+  grid-area: trainer-6;
+}
 }
