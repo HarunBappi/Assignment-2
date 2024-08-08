@@ -120,9 +120,9 @@ body {
 #play {
   color: #ffffff;
 }
-.banner-image > img{
-width: 330px;
-height: 545px;
+.banner-image > img {
+  width: 330px;
+  height: 545px;
 }
 .workout-info {
   height: 100px;
@@ -205,15 +205,15 @@ height: 545px;
   margin-top: 15px;
 }
 .habit-image {
-display: flex;
-justify-content: center;
-gap: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
 }
 .habit-image-info {
   margin-top: 55px;
   width: 230px;
 }
-.habit-image-info img{
+.habit-image-info img {
   width: 160px;
   height: 160px;
   border-radius: 50%;
@@ -233,10 +233,249 @@ gap: 40px;
   font-size: 0.875rem;
   font-weight: 400;
 }
+/* Style extra-mile-container With CSS  */
+.extra-mile-container {
+  max-width: 1010px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  margin-top: 80px;
+}
+.extra-mile-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.extra-mile-info {
+  width: 350px;
+  margin: 40px 0px 0px 45px;
+}
+.extra-mile-title {
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: bolder;
+  margin: 0;
+}
+.extra-mile-description {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 15px;
+}
+.extra-btn {
+  background-color: #e6533c;
+  width: 200px;
+  padding: 10px 0;
+  border: none;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 40px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.extra-mile-image > img {
+  width: 345px;
+  height: 295px;
+  border-radius: 16px;
+  margin: 35px 30px;
+  object-fit: none;
+  object-position: 65% 30%;
+}
+/* Start training-exercise-container style with CSS  */
+.training-exercise-container {
+  max-width: 1000px;
+  margin: 150px 0px 50px 90px;
+}
+.training-exercise-title {
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: bolder;
+  margin: 0;
+}
+.training-exercise-description {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.875rem;
+  width: 650px;
+  margin-top: 25px;
+  line-height: 24px;
+}
+.training-exercise-gallery {
+  margin-top: 45px;
+  display: grid;
+  grid-template-columns: 238px 494px 276px;
+}
+.exercise-gallery-level-2 {
+  display: grid;
+  grid-template-columns: 404px 274px 330px;
+}
+.exercise-1,
+.exercise-2,
+.exercise-3,
+.exercise-4,
+.exercise-5,
+.exercise-6 {
+  background-image: linear-gradient(
+      rgba(6, 255, 210, 0.5),
+      rgba(6, 255, 210, 0.5)
+    ),
+    url(../images/exercise1.jpg);
+  color: #ffffff;
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+}
+.exercise-2 {
+  background-image: linear-gradient(rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0.3)),
+    url(../images/exercise2.png);
+}
+.exercise-3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/exercise3.png);
+}
+.exercise-4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/exercise4.png);
+}
+.exercise-5 {
+  background-image: linear-gradient(
+      rgba(66, 255, 0, 0.3),
+      rgba(66, 255, 0, 0.3)
+    ),
+    url(../images/exercise5.jpg);
+}
+.exercise-6 {
+  background-image: linear-gradient(
+      rgba(0, 71, 255, 0.3),
+      rgba(0, 71, 255, 0.3)
+    ),
+    url(../images/exercise6.jpg);
+}
+.exercise-1-title,
+.exercise-2-title,
+.exercise-3-title,
+.exercise-4-title,
+.exercise-5-title,
+.exercise-6-title {
+  color: #000000;
+  font-size: 0.725rem;
+  font-weight: 400;
+  width: 150px;
+  margin: 150px 0px 0px 25px;
+}
+.exercise-2-title {
+  color: #ffffff;
+  margin: 25px 0px 0px 25px;
+}
+.exercise-4-title {
+  color: #ffffff;
+  margin: 25px 0px 0px 250px;
+}
+.exercise-3-title,
+.exercise-5-title,
+.exercise-6-title {
+  color: #ffffff;
+}
+/* Style With BMI-Calculator in CSS */
+.bmi-calculator-container {
+}
+.bmi-calculator-content {
+  max-width: 630px;
+  margin: 0 auto;
+  color: #ffffff;
+  margin-top: 80px;
+}
+.bmi-calculator-title {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin: 0;
+}
+.bmi-calculator-description {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.725rem;
+  line-height: 25px;
+}
+.bmi-calculator-measure {
+  background-color: rgb(34, 34, 34);
+  display: flex;
+  justify-content: center;
+  gap: 130px;
+  margin-top: 75px;
+}
+.bmi-calculator-chart > table {
+  border-collapse: collapse;
+  margin-top: 45px;
+}
+.bmi-calculator-chart td,
+th {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 12px 15px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.725rem;
+}
+.bmi-calculator-chart th {
+  color: #fff;
+  text-align: left;
+  font-size: 1rem;
+}
+.chart-title {
+  color: #ffffff;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 45px 0px 15px 0px;
+}
+.bmi-calculate {
+  max-width: 545px;
+}
+.calculate-title {
+  color: #ffffff;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 45px 0px 15px 0px;
+}
+.calculate-description {
+  max-width: 510px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.725rem;
+  line-height: 25px;
+}
+.bmi-calculate > input,
+select {
+  width: 235px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px 10px;
+  border: none;
+  border-radius: 8px;
+  margin: 10px 10px 10px 0px;
+  font-size: 1rem;
+}
+::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.bmi-calculate > #sex {
+  width: 255px;
+  color: rgba(255, 255, 255, 0.6);
+  border-right: 12px solid #393939;
+}
+.bmi-calculate > #activity {
+  width: 525px;
+  color: rgba(255, 255, 255, 0.6);
+  border-right: 12px solid #393939;
+}
+.calculate {
+  padding: 12px 60px;
+  cursor: pointer;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
 /* Responsive With Mobile Device */
 @media screen and (max-width: 576px) {
-  #header{
-    height:1195px;
+ /* Header Section Responsive */
+  #header {
+    height: 1195px;
     width: 100%;
   }
   .nav-menu {
@@ -255,7 +494,7 @@ gap: 40px;
   .image-info {
     gap: 20px;
   }
-  .banner-image{
+  .banner-image {
     margin-left: -70px;
   }
   .workout-info {
@@ -274,15 +513,53 @@ gap: 40px;
     text-align: center;
     margin-top: 10px;
   }
-  .change-habit-tile{
-font-size: 2rem;
+
+  /* chagne-habit-container Responsive */
+  .change-habit-tile {
+    font-size: 2rem;
   }
-  .habit-description{
+  .habit-description {
     width: 100%;
   }
-  .habit-image{
+  .habit-image {
     flex-direction: column;
     align-items: center;
     gap: 0;
+  }
+
+  /* extra-mile-content Responsive */
+  .extra-mile-content {
+    flex-direction: column;
+  }
+  .extra-mile-title {
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+
+  /* training-exercise-containe Responsive */
+  .training-exercise-container {
+    display: none;
+  }
+  /* bmi-calculator-container Responsive */
+  .bmi-calculator-content {
+    text-align: center;
+  }
+  .bmi-calculator-measure {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .bmi-calculator-chart,
+  .bmi-calculate {
+    margin-left: 15px;
+  }
+  .bmi-calculate > input,
+  select {
+    width: 155px;
+  }
+  .bmi-calculate > #sex{
+    width: 173px;
+  } 
+  .bmi-calculate > #activity{
+    width: 362px;
   }
 }
