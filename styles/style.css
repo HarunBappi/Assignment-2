@@ -378,6 +378,65 @@ body {
 .exercise-6-title {
   color: #ffffff;
 }
+/* Style With Slider-Container in CSS */
+.slider-container {
+  max-width: 996px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-top: 45px;
+}
+.slider-title {
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  padding-top: 25px;
+}
+.slider-description {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  line-height: 24px;
+  margin-bottom: 25px;
+}
+.slider-box {
+  width: 800px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+.slider {
+  position: relative;
+  animation-name: harun;
+  width: 4000px;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.slider img {
+  float: left;
+}
+@keyframes harun {
+  0% {
+    left: 0px;
+  }
+  10% {
+    left: 0px;
+  }
+  25% {
+    left: -800px;
+  }
+  50% {
+    left: -1600px;
+  }
+  75% {
+    left: -2400px;
+  }
+  100% {
+    left: -3200px;
+  }
+}
 /* Style With BMI-Calculator in CSS */
 .bmi-calculator-container {
 }
@@ -447,6 +506,8 @@ select {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 10px 10px;
   border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.65);
   border-radius: 8px;
   margin: 10px 10px 10px 0px;
   font-size: 1rem;
@@ -460,7 +521,7 @@ select {
   border-right: 12px solid #393939;
 }
 .bmi-calculate > #activity {
- max-width: 525px;
+  width: 525px;
   color: rgba(255, 255, 255, 0.6);
   border-right: 12px solid #393939;
 }
@@ -495,11 +556,16 @@ select {
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.1);
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 20px;
 }
-.trainer-1, .trainer-2, .trainer-3, .trainer-4, .trainer-5, .trainer-6 {
+.trainer-1,
+.trainer-2,
+.trainer-3,
+.trainer-4,
+.trainer-5,
+.trainer-6 {
   background-image: url("../images/trainer1.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -508,77 +574,77 @@ select {
   height: 255px;
   border-radius: 15px;
 }
-.trainer-2{
-background-image: url('../images/trainer2.png');
+.trainer-2 {
+  background-image: url("../images/trainer2.png");
 }
-.trainer-3{
-background-image: url('../images/trainer3.png');
+.trainer-3 {
+  background-image: url("../images/trainer3.png");
 }
-.trainer-4{
-background-image: url('../images/trainer4.png');
+.trainer-4 {
+  background-image: url("../images/trainer4.png");
 }
-.trainer-5{
-background-image: url('../images/trainer5.png');
+.trainer-5 {
+  background-image: url("../images/trainer5.png");
 }
-.trainer-6{
-background-image: url('../images/trainer6.png');
+.trainer-6 {
+  background-image: url("../images/trainer6.png");
 }
-.trainer-title{
+.trainer-title {
   color: #fff;
   font-size: 1.25rem;
   margin: 170px 0px 10px 15px;
 }
-.trainer-description{
+.trainer-description {
   color: rgba(255, 255, 255, 0.5);
-  font-size:0.875rem;
-  margin-left:15px;
+  font-size: 0.875rem;
+  margin-left: 15px;
 }
 /*Start Footer Section  */
-.footer-container{
+.footer-container {
   margin-top: 45px;
   background: rgba(255, 255, 255, 0.1);
   min-height: 400px;
 }
-.footer-content{
+.footer-content {
   max-width: 995px;
   margin: 0 auto;
 }
-.footer-info{
+.footer-info {
   display: flex;
   justify-content: space-between;
 }
-.fitness-info{
+.fitness-info {
   max-width: 415px;
 }
-.footer-description{
+.footer-description {
   font-size: 0.875rem;
   color: rgba(255, 255, 255, 0.5);
   line-height: 20px;
 }
-.get-strated{
+.get-strated {
   margin-top: 40px;
 }
-.get-strat-title{
+.get-strat-title {
   color: #fff;
   font-size: 2rem;
   font-weight: bold;
   margin: 0;
 }
-.get-strated > a{
+.get-strated > a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.5);
   font-size: 1.44rem;
   display: block;
   margin-top: 20px;
 }
-.footer-copyright{
+.footer-copyright {
   margin-top: 50px;
 }
-.footer-copyright > hr{
+.footer-copyright > hr {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.copyright-title{
+.copyright-title {
   font-size: 1.125rem;
   color: rgba(255, 255, 255, 0.5);
   text-align: center;
@@ -677,37 +743,68 @@ background-image: url('../images/trainer6.png');
     width: 362px;
   }
   /* MeetOurTeam Container Responsive */
-.team-trainers{
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-areas: 
-  "trainer-2"
-  "trainer-5"
-  "trainer-3"
-  "trainer-6";
-  align-items: center;
-  justify-items: center;
-}
-.trainer-1, .trainer-4{
-  display: none;
-}
-.trainer-2{
-  grid-area: trainer-2;
-}
-.trainer-3{
-  grid-area: trainer-3;
-}
-.trainer-5{
-  grid-area: trainer-5;
-}
-.trainer-6{
-  grid-area: trainer-6;
-}
-/* Footer section Responsive */
-.footer-info{
-  flex-direction: column;
-  margin-left: 15px;
-}
-.footer-copyright > hr{
-  margin: 0px 15px 0px 15px;
-}
+  .team-trainers {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "trainer-2"
+      "trainer-5"
+      "trainer-3"
+      "trainer-6";
+    align-items: center;
+    justify-items: center;
+  }
+  .trainer-1,
+  .trainer-4 {
+    display: none;
+  }
+  .trainer-2 {
+    grid-area: trainer-2;
+  }
+  .trainer-3 {
+    grid-area: trainer-3;
+  }
+  .trainer-5 {
+    grid-area: trainer-5;
+  }
+  .trainer-6 {
+    grid-area: trainer-6;
+  }
+  /* Footer section Responsive */
+  .footer-info {
+    flex-direction: column;
+    margin-left: 15px;
+  }
+  .footer-copyright > hr {
+    margin: 0px 15px 0px 15px;
+  }
+  /* Slider Section Responsive */
+  .slider-box {
+    width: 400px;
+  }
+  .slider {
+    width: 2000px;
+  }
+  .slider > img {
+    width: 400px;
+  }
+  @keyframes harun {
+    0% {
+      left: 0px;
+    }
+    10% {
+      left: 0px;
+    }
+    25% {
+      left: -400px;
+    }
+    50% {
+      left: -800px;
+    }
+    75% {
+      left: -1200px;
+    }
+    100% {
+      left: -1600px;
+    }
+  }
 }
