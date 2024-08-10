@@ -204,6 +204,7 @@ body {
   width: 630px;
   margin: 0 auto;
   margin-top: 15px;
+  line-height: 20px
 }
 .habit-image {
   display: flex;
@@ -233,6 +234,7 @@ body {
   color: rgba(255, 255, 255, 0.5);
   font-size: 0.875rem;
   font-weight: 400;
+  line-height: 20px
 }
 /* Style extra-mile-container With CSS  */
 .extra-mile-container {
@@ -836,4 +838,78 @@ select {
   .tutorial{
     margin-top: -225px;
   }
+  .habit-image{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 0px;
+  }
+  .training-exercise-container{
+    display: none;
+  }
+  .slider-box {
+    width: 700px;
+  }
+  .slider {
+    width: 3500px;
+  }
+  .slider > img {
+    width: 700px;
+  }
+  @keyframes harun {
+    0% {
+      left: 0px;
+    }
+    10% {
+      left: 0px;
+    }
+    25% {
+      left: -700px;
+    }
+    50% {
+      left: -1400px;
+    }
+    75% {
+      left: -2100px;
+    }
+    100% {
+      left: -2800px;
+    }
+  }
+  .bmi-calculator-measure{
+    flex-direction: column;
+    gap: 0;
+  }
+  .bmi-calculator-chart, .bmi-calculate{
+    margin-left: 20px;
+  }
+  .team-description{
+    padding: 0px 20px;
+  }
+.trainer-1,
+.trainer-2,
+.trainer-3,
+.trainer-4,
+.trainer-5,
+.trainer-6 {
+  max-width:225px;
+}
+  .footer-info{
+    display: block;
+  }
+  .fitness-info{
+    margin-left: 20px;
+  }
+ .footer-title{
+  padding-top: 45px;
+  margin: 0;
+ }
+ .get-strated{
+  display: inline-block;
+  margin: 25px 75px 15px 20px;
+ }
+ .footer-copyright hr{
+  margin: 0px 15px 0px 15px;
+ }
 }
