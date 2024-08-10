@@ -15,8 +15,9 @@ body {
   font-size: 1.125rem;
   color: #ffffff;
   border: none;
-  padding: 15px 25px;
+  padding: 15px 22px;
   margin-top: 30px;
+  cursor: pointer;
 }
 #header {
   background: linear-gradient(
@@ -130,7 +131,7 @@ body {
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.1);
   width: 160px;
-  padding: 5px 20px;
+  padding: 5px 16px;
   margin-left: -165px;
   margin-top: -220px;
 }
@@ -658,6 +659,9 @@ select {
     height: 1195px;
     width: 100%;
   }
+  .navbar{
+    padding: 0px 10px;
+  }
   .nav-menu {
     display: none;
   }
@@ -670,6 +674,9 @@ select {
   .banner-container {
     flex-direction: column;
     gap: 20px;
+  }
+  .banner-content{
+    padding: 0px 10px;
   }
   .image-info {
     gap: 20px;
@@ -720,9 +727,39 @@ select {
   .training-exercise-container {
     display: none;
   }
+   /* Slider Section Responsive */
+   .slider-box {
+    width: 400px;
+  }
+  .slider {
+    width: 2000px;
+  }
+  .slider > img {
+    width: 400px;
+  }
+  @keyframes harun {
+    0% {
+      left: 0px;
+    }
+    10% {
+      left: 0px;
+    }
+    25% {
+      left: -400px;
+    }
+    50% {
+      left: -800px;
+    }
+    75% {
+      left: -1200px;
+    }
+    100% {
+      left: -1600px;
+    }
+  }
   /* bmi-calculator-container Responsive */
   .bmi-calculator-content {
-    text-align: center;
+    padding:0px 10px 0px 25px;
   }
   .bmi-calculator-measure {
     flex-direction: column;
@@ -774,37 +811,29 @@ select {
     flex-direction: column;
     margin-left: 15px;
   }
+  .footer-description{
+    padding-right:10px ;
+  }
   .footer-copyright > hr {
     margin: 0px 15px 0px 15px;
   }
-  /* Slider Section Responsive */
-  .slider-box {
-    width: 400px;
+  .copyright-title{
+    text-align: start;
+    margin-left: 18px;
   }
-  .slider {
-    width: 2000px;
+}
+
+/* Strat With Tablet(iPad-mini) Responsive */
+@media  screen and (min-width:576px) and (max-width:768px) {
+  
+  .navbar{
+    padding: 0px 15px;
   }
-  .slider > img {
-    width: 400px;
+  .banner-container{
+    flex-direction: column;
+    height: 1135px;
   }
-  @keyframes harun {
-    0% {
-      left: 0px;
-    }
-    10% {
-      left: 0px;
-    }
-    25% {
-      left: -400px;
-    }
-    50% {
-      left: -800px;
-    }
-    75% {
-      left: -1200px;
-    }
-    100% {
-      left: -1600px;
-    }
+  .tutorial{
+    margin-top: -225px;
   }
 }
